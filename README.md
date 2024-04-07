@@ -195,6 +195,87 @@ VALUES
     
     (110, 'Mouse', 250.00, 12);
 
+    CREATE TABLE Customers (
     
+    customer_id INT PRIMARY KEY,
+    
+    cust_name VARCHAR(255),
+    
+    city VARCHAR(255),
+    
+    grade INT,
+    
+    salesman_id INT
+
+);
+
+INSERT INTO Customers (customer_id, cust_name, city, grade, salesman_id) 
+
+VALUES 
+
+(3002, 'Nick Rimando', 'New York', 100, 5001),
+
+(3007, 'Brad Davis', 'New York', 200, 5001),
+
+(3005, 'Graham Zusi', 'California', 200, 5002),
+
+(3008, 'Julian Green', 'London', 300, 5002),
+
+(3004, 'Fabian Johnson', 'Paris', 300, 5006),
+
+(3009, 'Geoff Cameron', 'Berlin', 100, 5003),
+
+(3003, 'Jozy Altidor', 'Moscow', 200, 5007),
+
+(3001, 'Brad Guzan', 'London', NULL, 5005); -- Assuming NULL for the missing grade
+
+
+select * from Customers;
+
+CREATE TABLE Employees (
+    
+    EMP_IDNO INT,
+    
+    EMP_FNAME VARCHAR(50),
+    
+    EMP_LNAME VARCHAR(50),
+    
+    EMP_DEPT INT
+
+);
+
+
+INSERT INTO Employees (EMP_IDNO, EMP_FNAME, EMP_LNAME, EMP_DEPT)
+
+VALUES
+
+    (127323, 'Michale', 'Robbin', 57),
+    
+    (526689, 'Carlos', 'Snares', 63),
+    
+    (843795, 'Enric', 'Dosio', 57),
+    
+    (328717, 'Jhon', 'Snares', 63),
+    
+    (444527, 'Joseph', 'Dosni', 47),
+    
+    (659831, 'Zanifer', 'Emily', 47),
+    
+    (847674, 'Kuleswar', 'Sitaraman', 57),
+    
+    (748681, 'Henrey', 'Gabriel', 47),
+    
+    (555935, 'Alex', 'Manuel', 57),
+    
+    (539569, 'George', 'Mardy', 27),
+    
+    (733843, 'Mario', 'Saule', 63),
+    
+    (631548, 'Alan', 'Snappy', 27),
+    
+    (839139, 'Maria', 'Foster', 57);
+
+select * from Employees;
+
 
 
